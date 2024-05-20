@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Travel Destination</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0    }
+    body{
+      min-height: 100vh;
+background: #f5f5f5;
+font-family: sans-serif, Roboto;
+    }
+    nav{
+      background-color: white;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    nav ul{
+      width: 100%;
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      align-items: center;
+    
+    }
+    nav li{
+      height: 50px;
+    }
+    nav a{
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+        
+     color: #87ceeb;
+      font-weight:bold ;
+      font-size: 28px;
+    }
+    nav a:hover{
+      background-color: #f0f0f0;
+    }
+    .main-image{
+      float: right;
+      width: 100%;
+      height: 650px;
+    }
+    .home{
+      position: relative;
+
+    }
+    .home-text{
+position:absolute;
+top: 0;
+color: white;
+padding: 50px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+     .city{
+      font-size: 50px;
+      padding: 30px;
+    }
+    .description{
+      font-size: 38px;
+      font-family: cursive;
+    }
+    .about{
+    
+      margin-top: 20px;
+      margin: 30px;
+    }
+    h3{
+      margin-top: 20px;
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+    }
+    button{
+      display:block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      padding: 30px 120px;
+      background-color:#c6e2b5;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 3px 3px 3px rgba(0,0, 0, 0.4);
+      transition:background-color 0.3s;
+      cursor: pointer;
+    }
+      button:hover {
+        background-color:#87ceeb;
+        
+      }
+    
+    .attractions{
+      display: flex;
+
+    }
+    .box{
+      padding-left: 10px;
+      padding-right: 10px;
+       width: 500px;
+       margin: 20px;
+       box-shadow:0px 0px 10px rgba(100, 100, 150, 0.5);
+       
+
+
+    }
+    img{
+      width: 450px;
+    }
+    h4{
+      text-align: center;
+      font-size: 20px;
+      
+    }
+    .attractions p {
+      justify-content: center;
+    }
+    .activities{
+      background-color: #c6e2b5;
+      
+    }
+    .activities p{
+      margin: 0 30px;
+      color: blue;
+    }
+    .sports{
+      display: flex;
+    }
+    .water-sports{
+      width: 280px;
+      border-radius: 15px;
+      transition: transform 0.5s;
+    }
+    .water-sports:hover{
+      transform: scale(1.5, 2);
+    }
+    .water{
+      padding: 8px;
+      width: 300px;
+      height:250px;
+      margin:20px 0;
+      border:1px dotted white;
+      
+    }
+    .other-activities{
+      display: flex;
+    }
+    .second{
+      width: 50%;
+      margin:30px;
+      padding: 20px;
+      padding-bottom: 10px;
+    
+    }
+    .other{
+     width: 600px;
+     border: 1px solid white;
+     border-radius: 50px;
+       box-shadow: 10px 10px 15px rgba(0, 0, 255, 0.1);
+    }
+    .culture{
+      display: flex;
+    
+    }
+   .pilgrimage{
+    width:680px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+   box-shadow : 0px 0px 10px rgba(0, 0, 0, 0.1); 
+   }
+   .cathedral{
+    width:650px;
+   }
+   .temple{
+    width: 650px;
+   }
+   .other-culture{
+  display: flex;
+  margin-left: 100px;
+  
+   }
+   .dance{
+    display: flex;
+    margin-left: 100px;
+   }
+   .heritage{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #c6e2b5;
+    border-radius: 100px;
+   }
+   p {
+    margin: 30px;
+    font-size:18px;
+    margin-right: 40px;
+    margin-left: 40px;
+  
+   }
+   .hotel-container{
+     background-color: #c6e2b5;
+   }
+   .resorts{
+   
+    display: flex;
+    margin: 20px;
+   }
+   .hotel{
+width: 500px;
+padding: 15px;
+ box-shadow : 0px 0px 10px rgba(0, 0, 0, 0.1); ;
+   }
+   .hotel img{
+    width:480px;
+    height: 400px;
+   }
+  
+   
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">Attractions</a></li>
+        <li> <a href="#">Activities</a></li>
+       <li> <a href="#">Where to stay</a></li>
+        <li> <a href="#">Culture</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="home">
+         <img class="main-image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/902/original/seychelles-best-beaches.jpg?1716114441" alt="image of a beach">
+
+         <div class="home-text">
+           <h1 class="city">Seychelles</h1>
+       <h2 class="description">Dream It, You Might wake Up There!
+      </br>
+          Sun Sea and Sand
+      </h2>
+    </div>
+    </div>
+
+    <div class="about">
+     <h3>About Seychelles</h3>
+     <p>
+      Seychelles lies northeast of Madagascar, an archipelago of 115 islands with roughly 98,000 citizens. Seychelles is a melting pot of many cultures which have commingled and coexisted since the first settlement of the islands in 1770. The three main inhabited islands are Mahé, Praslin and La Digue and the official languages are English, French and Seychellois Creole.A diverse history contributes greatly to the culture in Seychelles. A myriad of different ethnicities - African, European, Arab and Indian people - live in a harmonious country where diversity is an integral part of the landscape. Even if Catholicism is the most common religion in Seychelles, Hinduism and Islam contribute to the religious environment. Culture in Seychelles transports you to a world with both Creole and Western influences. This heritage is found through a particularly diverse architecture. Indeed, you can admire the majestic colonial mansions that transport you to another era.
+     </p>
+     <a href="https://www.seychelles.com/aboutus/aboutseychelles" target="_blank">Learn More</a>
+   
+    </div>
+      <button>Where do you want to go Today</button>
+    <h3>Most Popular Beaches</h3>
+    <div class="attractions">
+       <div class= "box" id="Mahe" >
+       <h4> Baeu Vollon Beach</h4>
+       <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/890/original/beau_vollon.jpg?1716113698" alt="image of Baeu Vallon">
+       <h4>Mahe Island</h4>
+       <p>
+         Beau Vallon bay, arguably the island’s most famous and popular beach. One of the longest beaches in the Seychelles, Beau Vallon is popular amongst tourists and locals thanks to its mixture of beautiful scenery, extensive activity options, fantastic surrounding infrastructure, and widespread appeal. If you are lucky enough to be staying in one of the many accommodations that lie near to the beach, it will simply be a short walk from your room to the golden sand of Beau Vallon. 
+       </p> 
+    </div>
+    <div class= "box" id="Praslin">
+      <h4> Anse Lazio Beach</h4>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/889/original/anse_lazio.jpg?1716113663" alt="image of Anse lazio beach">
+      <h4>Praslin Island</h4>
+      <p>
+        Nestled on a cave on Praslin'sNorthwest coast is one of the most breathtaking beaches you will ever find.Anse Lazio, Praslin island's most famous beach is an epic tropical paradise complete with a coonut filled palms above prestine white sand and turquoise water.
+      </p>
+       
+    </div>
+    <div class="box" id="La Digue">
+      <h4>Anse Source D'Argent Beach</Source></h4>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/892/original/LaDigue-beach_anse_source_d'argent.jpg?1716113857" alt=" an image of Anse Source D'Argen ">
+      <h4>La Digue island</h4>
+      <p>
+        Famed for being one of the most photographed beaches on the planet, Anse Source d'Argent is a sight to behold. Its dazzling white sands are lapped by shallow emerald waters, backed by some of La Digue's most beautiful granite boulders and shaded by craning coconut palms.The absolutely breathtaking scenery is the real highlight of Anse Source d’Argent. The mixture of shallow, clear water, golden sand, and imposing granite formations make it one of the most picturesque beaches anywhere in the world, and one that’s well worth visiting for anyone taking a holiday to the Seychelles.
+      </p>
+    </div>
+    </div>
+    <div class="activities">
+    <h3> Water Sports Activities</h3>
+    <p>
+      Seychelles is a haven for world-class activities. Its safe and pristine environment is just the place to treat your family to a once-in-a-lifetime holiday.First and foremost, Seychelles is not only a playground for lovers of the ocean, but also a treasure trove for every sailor, diver and fisherman, offering diverse opportunities for enjoyment both above and beneath the waves.There are numerous diving, sailing and fishing operators offering tailor-made day trip packages and excursions on boats and yachts. 
+    </p>
+  
+    <div class="sports">
+     
+      <div class="water">
+         <h4>Snorkeling</h4>
+        <img class="water-sports" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/898/original/snorkelling.jpg?1716114145" alt=" a woman snorkeling">
+
+      </div>
+      <div class="water">
+        <h4>Kayaking</h4>
+        <img class="water-sports" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/947/original/kayaking.jpeg?1716147951" alt=" women kayaking">
+      </div>
+      <div class="water">
+        <h4>Fishing</h4>
+        <img class="water-sports" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/906/original/fishing_in_seychelles.jpg?1716115757" alt=" couple fishing in a boat">
+        </div>
+      <div class="water">
+        <h4>Surfing</h4>
+        <img class="water-sports" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/900/original/surfing_seychelles.jpg?1716114228" alt="a man surfing ">
+      </div>
+
+      
+      <div class="water">
+        <h4> Diving</h4>
+        <img class="water-sports" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/897/original/reef_diving.jpg?1716114114" alt=" a person diving ">
+
+      </div>
+     </div>
+     <h3>Other activities</h3>
+     <div class="other-activities">
+        <div class="second">
+        <h4>Picnicking at the Beach</h4>
+        <img class="other" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/907/original/relaxing_in_seychelles.jpg?1716115813" alt=" couple sitting on the beach">
+        <p> 
+          Couple relaxing at Anse Intendence, Mahe, Seychelles.
+        </p>
+      </div>
+      <div class="second">
+        <h4>Hiking</h4>
+        <img class="other" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/895/original/hiking_seychelles.jpg?1716114044" alt=" a man hiking">
+        <p>
+           The path is well maintained and easily do-able and most of it is shaded by lush vegetation, including the magnificent Coco de Mer palms. At the top of the mountain there is a fire tower, and while climbing up the vertical metal ladders is not for the fainthearted, the views towards St Anne's Bay and across the sea to La Digue, made the climb worthwhile. 
+          </p>
+        </div>
+      </div>
+     </div>
+     <h3>Cultural activities</h3>
+     <div class="culture">
+     <div class="pilgrimage">
+    <h4>Cathedral Of Our Lady Of Immaculate Conception</h4>
+      <img class="temple" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/891/original/immaculate_conception.jpg?1716113770" alt="cathedral of">
+     
+         <p>
+    The Immaculate Conception Cathedral or Cathedral of Victoria, is a religious building of the Catholic Church located in the town of Victoria, on the island of Mahé, capital of Seychelles. It is near the Clock Tower and the Anglican Cathedral. The church was built in 1874 in French colonial style. It was constructed on the site of the first church built in 1851 by Father Leon of Avengers. It serves as the mother church of the Catholic Diocese of Seychelles and also the seat of the bishop of the Diocese of Port Victoria which was established in 1892 by Pope Leo XIII.
+        
+      </p>
+      </div>
+      <div class= "pilgrimage">
+        <h4>Hindu Temple</h4>
+      <image class="cathedral" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/887/original/temple_seychelles.jpg?1716113564" alt=""></image>
+       <p>
+        With its doors open to the whole Seychellois nation as well as tourists and foreigners visiting the country, the temple is a well-known landmark in the capital city of Victoria and has become one of the major tourist attractions.  It is not only a venue of worship but also a place where the encouragement and promotion of cultural activities takes place to ensure the growth of peace and goodwill in the country. Here, religious and cultural education is also imparted to children and it serves to highlight the unparalleled Hindu philosophy of creating an atmosphere of brotherhood and religious harmony among all.
+      </p>
+     
+       </div>
+     </div>
+        
+     <div class="other-culture">
+       <img class="heritage" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/881/original/culture.jpg?1716113123" alt=" a band of singers"
+      </div>
+      <div>
+      <img class="heritage" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/884/original/art.jpg?1716113445" alt="">
+      </div>
+      <div>
+       <img class="heritage" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/883/original/dance_seychelles.jpg?1716113368" alt=" people singing at the beach">
+       </div>
+      </div>
+      <div class="dance">
+      <div>
+       <img class="heritage" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/960/original/fishmarket.jpg?1716195606" alt="tourists at a fishmarket">
+       </div>
+       <div>
+       <img class="heritage" height="300px" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/882/original/cultural_dance.jpg?1716113329" alt=" traditional dance">
+       </div>
+       <div>
+     
+      <img class="heritage" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/885/original/market_seychelles.jpg?1716113474" alt="">
+      </div>
+    </div>
+    <div>
+
+     <p>
+        Join in on the hands-on workshop and create your own take-home printed textile design while learning how local communities have used plants for centuries to make colorful fabrics. Get entertained by local artists showcasing diverse styles that echo the multi-ethnic backdrop of the islands. Creole music and dance, with roots in African, Malagasy, and European cultures, are performed by groups of traditional dancers at various functions. Don't miss a visit to the local vegetable and fish market to pick up fresh fish and vegetables.
+         </p>
+         </div>
+        
+   
+    <p>
+        With its doors open to the whole Seychellois nation as well as tourists and foreigners visiting the country, the temple is a well-known landmark in the capital city of Victoria and has become one of the major tourist attractions.  It is not only a venue of worship but also a place where the encouragement and promotion of cultural activities takes place to ensure the growth of peace and goodwill in the country. Here, religious and cultural education is also imparted to children and it serves to highlight the unparalleled Hindu philosophy of creating an atmosphere of brotherhood and religious harmony among all.
+      </p>
+      <div class="hotel-container">
+       <h3>Where to Stay</h3>  
+    <div class="resorts">
+     
+         <div class="hotel">
+          <h4>Anantara Maia Seychelles Villas</h4>
+      <img class="Anantara" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/977/original/anantara_villa.jpg?1716210531" alt="a photo of anantara resort hotel">
+      <p>
+        Anantara Maia Seychelles Villas is situated on a private peninsula between Anse Louis and Anse Boileau on Mahe', the largest island in the Seychelles.
+        Embrace restorative luxury in private villas edging porcelain sands framed by thirty acres of forest. Exotic tropical delights of Seychelles resorts are in abundance here where they  blends seamlessly with the landscape.
+      </p>
+      </div>
+      <div class="hotel">
+        <h4>Constance Lemuria Resort Seychelles</h4>
+      <img class=" Lemuria" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/978/original/constance_lemuria_resort.jpg?1716210612" alt= "image of costance lemuria resort hotel" >
+      <p>
+        The Seychelles resort of Constance Lémuria is a gem amongst a verdant environment. The resort perfectly merges with its natural surroundings, providing luxury accommodation in 101 hectares complete with an 18-hole championship golf course.
+        Stay in one of 88 Junior Suites, 8 Senior Suites or 8 Villas with private pools. You can also choose the resort’s only Presidential Villa, with three bedrooms and the very best luxury fittings and furnishings
+      </p>
+      </div>
+      <div class="hotel">
+        <h4>Four Seasons</h4>
+      <img class="four seasons" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/997/original/four_seasons_seychelles.jpg?1716233322" alt=" an image of the four seasons hotel in seychelles">
+      <p>
+        Scattered across Petite Anse Beach and overlooking a sprawling bay,the private pool villas and suites of this resort exudes ocean front luxury. Dive and snorkel the vivid colors of underwater reefs, power down with a full-moon massage or simply sink into the bliss of your own private pool.
+      </p>
+      </div>
+      </div>
+    </div>
+     </main>
+    <script>
+      function enjoySeychelles(){
+    let island = prompt("Which Island are you visiting today?");
+    let activities = prompt("What activities are you partaking in today?");
+    if(island === "Mahe") {
+      alert("Enjoy the Adventure!!");
+    }else{
+      alert ("Enjoy your stay!");
+    }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+      let element = document.querySelector("button");
+      element.addEventListener("click",enjoySeychelles);
+
+    });
+
+    </script>
+  </body>
+</html>
