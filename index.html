@@ -3,31 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  
+  
   <title>Dream Travel Destination</title>
   <style>
     *{
       margin: 0;
-      padding: 0    }
+      padding: 0
+      }
     body{
+      width: 100%;
       min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
 background: #f5f5f5;
 font-family: sans-serif, Roboto;
     }
     nav{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: white;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+     
     }
+         
+   
+    
     nav ul{
       width: 100%;
       display: flex;
       list-style: none;
       justify-content: flex-end;
+    
       align-items: center;
+        
     
     }
     nav li{
       height: 50px;
+       
     }
     nav a{
       height: 100%;
@@ -35,7 +54,7 @@ font-family: sans-serif, Roboto;
       text-decoration: none;
       display: flex;
       align-items: center;
-        
+       
      color: #87ceeb;
       font-weight:bold ;
       font-size: 24px;
@@ -45,7 +64,7 @@ font-family: sans-serif, Roboto;
     }
       nav li:first-child{
         margin-right: auto;
-        font-size: 28px;
+        font-size: 32px;
       }
     
     .main-image{
@@ -65,12 +84,14 @@ padding: 50px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
      .city{
-      font-size: 50px;
+      font-size: 120px;
       padding: 30px;
     }
     .description{
-      font-size: 38px;
+      font-size: 24px;
       font-family: cursive;
+      padding-top: 280px;
+      color: blue;
     }
     .about{
     
@@ -119,7 +140,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
        width: 500px;
        margin: 20px;
        box-shadow:0px 0px 10px rgba(100, 100, 150, 0.5);
-       
+       background-color: rgb(249, 249, 249);
 
 
     }
@@ -208,6 +229,8 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     width: 400px;
     height: 280px;
     padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(249, 249, 249);
    border-radius: 100px;
    cursor: pointer;}
    .heritage-zoom-in{
@@ -263,8 +286,28 @@ padding: 15px;
     padding-top:60px;
     margin-top:20px;
    }
-  
-   
+   #back-home{
+    margin-left: 30px;
+    font-size: 20px;
+    color: blue;
+    padding: 20px;
+    font-weight: bold;
+   }
+   #contact{
+    text-align: center;
+   }
+   .footer-container{
+    background-color:#c6e2b5;
+  }
+  .icons{
+    font-size: 60px;
+    padding: 30px;
+    margin-left: 50px;
+  }
+    .name{
+    text-align: center;
+    padding-bottom: 15px;
+   }
 
     
   </style>
@@ -280,8 +323,10 @@ travel
         <li> <a href="#home">Home</a></li>
         <li> <a href="#attractions">Attractions</a></li>
         <li> <a href="#activities">Activities</a></li>
-       <li> <a href="#where to stay">Where to stay</a></li>
+       <li> <a href="#where to stay">Hotels</a></li>
         <li> <a href="#food">Food</a></li>
+         <li> <a href="#culture">Culture</a></li>
+         <li> <a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -505,8 +550,47 @@ travel
      </main>
       <div id="back-home">
          <a href="#top">Back to Home</a>
-    </div>
-     
+         </div>
+
+         <div class="footer-container">
+            
+               <h3 id="contact">Contact Us</h3>
+               <div class="contents-footer">
+                    <footer>
+                
+          
+          <div class="contact" id="phone">
+         <p>Email:
+          <span class="material-symbols-outlined">
+                mail
+          </span> &nbsp &nbsp
+          tanditravel&tours@gmail.com
+        </p>
+        <p>
+          Cell:
+          <span class="material-symbols-outlined">
+              call
+          </span>&nbsp &nbsp &nbsp &nbsp
+          082 345 3450
+               </p>
+                <span class="icons">
+               <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              </span>
+            
+        <div class="name">
+        <p>
+          This project was coded👩‍💻 by<strong> Tandiwe Beta</strong>, is open sourced on
+          <a href="https://github.com/TandiweBeta/Dream-Travel-Destination" target="_blank" >Github</a>
+           and hosted on
+          <a href="https://mydreamtraveldestination.netlify.app/" target="_blank"> Netlify</a>
+          
+        </p>
+      </div>
+       </div>
+              </footer>
+            </div>
       </div>
      </body>
     <script>
@@ -527,5 +611,4 @@ travel
     });
 
     </script>
-  </body>
-</html>
+    </html>
