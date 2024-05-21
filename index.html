@@ -38,13 +38,14 @@ font-family: sans-serif, Roboto;
         
      color: #87ceeb;
       font-weight:bold ;
-      font-size: 28px;
+      font-size: 24px;
     }
     nav a:hover{
       background-color: #f0f0f0;
     }
       nav li:first-child{
         margin-right: auto;
+        font-size: 28px;
       }
     
     .main-image{
@@ -207,8 +208,14 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     width: 400px;
     height: 280px;
     padding: 30px;
-    
-    border-radius: 100px;
+   border-radius: 100px;
+   cursor: pointer;}
+   .heritage-zoom-in{
+   transform:scale(1);
+   transition: 0.3s ease-in-out;
+   }
+   .heritage-zoom-in:hover{
+    transform:scale(1.5);
    }
    p {
     margin: 30px;
@@ -235,6 +242,28 @@ padding: 15px;
     height: 400px;
    }
   
+   .food{
+    display: flex;
+    flex-direction: row;
+    
+   }
+   .dish{
+  
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+
+   }
+   
+   .food text{
+    padding-top:50px ;
+   }
+   .food h4{
+    padding-top:60px;
+    margin-top:20px;
+   }
+  
    
 
     
@@ -245,19 +274,19 @@ padding: 15px;
     <nav>
       <ul>
         
-        <li> <a href="#">Tandi Travel &Tours <span class="material-symbols-outlined">
+        <li> <a href="#top" id="top">Tandi Travel &Tours <span class="material-symbols-outlined">
 travel
 </span></a></li>
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#">Attractions</a></li>
-        <li> <a href="#">Activities</a></li>
-       <li> <a href="#">Where to stay</a></li>
-        <li> <a href="#">Culture</a></li>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#attractions">Attractions</a></li>
+        <li> <a href="#activities">Activities</a></li>
+       <li> <a href="#where to stay">Where to stay</a></li>
+        <li> <a href="#food">Food</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="home">
+    <div class="home" id="home">
          <img class="main-image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/902/original/seychelles-best-beaches.jpg?1716114441" alt="image of a beach">
 
          <div class="home-text">
@@ -278,7 +307,7 @@ travel
    
     </div>
       <button>Where do you want to go Today?</button>
-    <h3>Most Popular Beaches</h3>
+    <h3 id="attractions">Most Popular Beaches</h3>
     <div class="attractions">
        <div class= "box" id="Mahe" >
        <h4> Baeu Vollon Beach</h4>
@@ -307,7 +336,7 @@ travel
     </div>
     </div>
     <div class="activities">
-    <h3> Water Sports Activities</h3>
+    <h3 id="activities"> Water Sports Activities</h3>
     <p>
       Seychelles is a haven for world-class activities. Its safe and pristine environment is just the place to treat your family to a once-in-a-lifetime holiday.First and foremost, Seychelles is not only a playground for lovers of the ocean, but also a treasure trove for every sailor, diver and fisherman, offering diverse opportunities for enjoyment both above and beneath the waves.There are numerous diving, sailing and fishing operators offering tailor-made day trip packages and excursions on boats and yachts. 
     </p>
@@ -357,7 +386,7 @@ travel
         </div>
       </div>
      </div>
-     <h3>Cultural activities</h3>
+     <h3 id="culture">Cultural activities</h3>
      <div class="culture">
      <div class="pilgrimage">
     <h4>Cathedral Of Our Lady Of Immaculate Conception</h4>
@@ -407,7 +436,7 @@ travel
          </p>
         </div>
       <div class="hotel-container">
-       <h3>Where to Stay</h3>  
+       <h3 id="where to stay">Where to Stay</h3>  
     <div class="resorts">
      
          <div class="hotel">
@@ -435,7 +464,51 @@ travel
       </div>
       </div>
     </div>
+    <div class="food-container">
+      <h3 id="food">What to eat!</h3>
+      
+      <div class="cuisine">
+        <div class="food">
+
+          <img class="dish" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/058/original/braaid_fish.jpg?1716274034" alt="">
+          <div class="text">
+             <h4>Grilled Fish</h4>
+              <p>
+               
+           At the heart of any menu in Seychelles, is the nation’s fantastic offerings of fish. Caught fresh daily and nearly always cooked on the grill, to provide a true ocean-to-plate experience that is like none other in the world. Local specialities include red snapper, jobfish, jackfish, sailfish or parrotfish and each are simply irresistible when served with the region’s mouthwatering marinade of lemon juice, ginger, garlic and chilli. Keep an eye out for the local fisherman and their countless colourful boats that can be seen fishing for your dinner in the heart of the Indian Ocean. 
+          </p>
+        </div>
+      </div>
+     <div class="food">
+          
+           <div class="text">
+          <h4>  Les Roussettes</h4>
+          <p>
+          
+        Literally translating as the flying bats in French, les roussettes is just that: flying fruit bats that are most commonly served in a lip-searing curry (or occasionally grilled). But don’t be deterred by this unfamiliar sounding dish, which has emerged as a longstanding local delicacy and is now a favourite among fearless foodies in Seychelles. Should you be in search of the dish during your stay, les roussettes is assured to be unlike anything you have ever eaten - but you’ll simply have to try it for yourself to find out!
+          </p>
+         </div> 
+          <img class="dish" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/062/original/les_roussettes.jpg?1716277967" alt="">
+
+        </div>
+      <div class="food">
+        <img class="dish" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/063/original/satin.jpg?1716278530" alt="">
+        <div class="text">
+        <h4>  Satini</h4>
+          <p>
+         Another dish that is completely unique to Seychelles, satini is essentially a salad. But unlike most other salads in the world, this one is made using a medley of seafood which is then mashed and mixed with a variety of fruits and spices. Most commonly served with lime, onions, blimbi (local fruit), papaya, apple, chilli and lots of turmeric - which gives satini its yellow appearance. Such is the popularity of this local delicacy, you’ll find it in almost every creole restaurant as an accompaniment to your main course. 
+        </p>
+        
+       </div>
+      </div>
+    </div>
      </main>
+      <div id="back-home">
+         <a href="#top">Back to Home</a>
+    </div>
+     
+      </div>
+     </body>
     <script>
       function enjoySeychelles(){
     let island = prompt("Which Island are you visiting today?");
